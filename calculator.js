@@ -27,32 +27,13 @@ function calculate(event){
      if (buttonValue === '='&& display.value!== "") { //display.value!== "" >> evitar el "Undefined" en la pantalla por un cálculo vacio
           display.value = eval (display.value); //W3S: "The eval() function evaluates or executes an argument."
      }
+     else if (buttonValue === "C"){ //Para borrar
+       display.value = "";
+     }
      else{
      display.value += buttonValue;
      }
 }
-
-/*
-function calculate(event) {
-     // current clicked buttons value
-     const clickedButtonValue = event.target.value;
-   
-     if (clickedButtonValue === '=') {
-       // check if the display is not empty then only do the calculation
-       if (display.value !== '') {
-         // calculate and show the answer to display
-         display.value = eval(display.value);
-       }
-     } else if (clickedButtonValue === 'C') {
-       // clear everything on display
-       display.value = '';
-     } else {
-       // otherwise concatenate it to the display
-       display.value += clickedButtonValue;
-     }
-   }
-*/
-
 
 
 
