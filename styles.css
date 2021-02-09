@@ -1,0 +1,126 @@
+body{
+    background-color: #D9AFD9;
+    background-image: linear-gradient(45deg, #D9AFD9 0%, #97D9E1 100%);
+    
+}
+
+#calculator{
+    margin: auto;
+    margin-top: 50px;
+    width: 40%;
+    display:grid;
+    justify-content: center;
+    }
+.screen{
+    display:grid;
+    grid-template-columns: 270px 90px ;
+
+}
+#buttons{
+    display:grid;    
+    grid-template-columns: 90px 90px 90px 90px;
+    padding-top: 5px;
+}
+
+button{
+    height: 80px;
+    border-radius: 10px;  
+    margin: 5px;
+    color: white;
+    font-size: 2em;
+    border: 2px solid white;
+    animation-name: borderanim;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+button:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+button:focus{ 
+    outline: none;
+}
+input{
+    border-radius: 10px;  
+    border: none;
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 2em;
+    background-color: rgba(240, 124, 124, 0.281);
+    text-align: right;   
+}
+
+/*COLORS*/
+#one{
+    background-color:#F3B56C;
+}
+#two{
+    background-color:#F2AF6B;
+}
+#three{
+    background-color:#EFA76C;
+}
+#four{
+    background-color:#F0A06B;
+}
+#five{
+    background-color:#ED996A;
+}
+#six{
+    background-color:#EC936B;
+}
+#seven{
+    background-color:#EB8C6C;
+}
+#eight{
+    background-color:#E9836C;
+}
+#nine{
+    background-color:#E97B6C;
+}
+#zero{
+    background-color:#E57369;
+}
+#delete{
+    background-color:#22c1c3;
+}
+#division{
+    background-color:#3ec0b0;
+}
+#multiplication{
+    background-color:#4bbfa6;
+}
+#substract{
+    background-color:#4fbfa4;
+}
+#addition{
+    background-color:#51bfa3;
+}
+#equal{
+    background-color:#53bfa2;
+}
+#dot{
+    background-color:#54bfa1;
+}
+
+/*LOOP ANIMATION*/
+ @keyframes borderanim {
+    0%   {border: 2px solid white;}
+    50%  {border: 2px solid rgb(252, 205, 134);}
+    100% {border: 2px solid white;}
+  }
+
+/*ANINATED GIF*/
+img{
+    opacity: 0;
+    position: absolute;
+    height: 100px;
+    top: 70%;
+    animation-name: walk;
+    animation-duration: 30s;
+}
+@keyframes walk{
+    0% { opacity: 1; left: 0%; animation-timing-function: linear; }
+    100% {opacity: 1; left: 95%;}
+}

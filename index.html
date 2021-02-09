@@ -9,29 +9,36 @@
     </head>
   
   <body>
-
-    <input type="text" class="display" disabled>
-
+    <div id ="calculator">
+            <div class="screen">
+             <input type="text" class="display" disabled>
+             <button value="C" class ="operator" id="delete">C</button>
+            </div>
          <div id="buttons">
-            <button value="0">0</button>
-            <button value="1">1</button>
-            <button value="2">2</button>
-            <button value="3">3</button>
-            <button value="4">4</button>
-            <button value="5">5</button>
-            <button value="6">6</button>
-            <button value="7">7</button>
-            <button value="8">8</button>
-            <button value="9">9</button>
-            <button value=".">.</button>
-            <button value="+" class ="operator">+</button>
-            <button value="-" class ="operator">-</button>
-            <button value="*" class ="operator">x</button>
-            <button value="/" class ="operator">/</button>
-            <button value="=" class ="operator">=</button>
-            <button value="C" class ="operator">C</button>
+            <button value="1" id="one">1</button>
+            <button value="2" id="two">2</button>
+            <button value="3" id="three">3</button>
+            <button value="/" class ="operator" id="division">/</button>
+
+            <button value="4" id="four">4</button>
+            <button value="5" id="five">5</button>
+            <button value="6" id="six">6</button>
+            <button value="*" class ="operator" id="multiplication">x</button>
+
+            <button value="7" id="seven">7</button>
+            <button value="8" id="eight">8</button>
+            <button value="9" id="nine">9</button>
+            <button value="-" class ="operator" id="substract">-</button>
+
+            <button value="." id="dot">.</button>
+            <button value="0" id="zero">0</button>
+            <button value="=" class ="operator" id="equal">=</button>
+            <button value="+" class ="operator" id="addition">+</button>
+              
         
         </div>
+        <img src="walking.gif" alt="A cute walking mushroom" />
+    </div>
 
         <script src="calculator.js"></script>
     </body>
