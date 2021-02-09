@@ -11,7 +11,6 @@ if (operation = "SUM"){
 }
 */
 
-//NIVEL 1
 //HELP -> https://thecodingpie.com/post/how-to-build-a-simple-calculator-using-javascript-html-and-css/
 
 const buttons = document.querySelectorAll('button'); //Array con todos los botones, números y operadores
@@ -27,7 +26,7 @@ function calculate(event){
      if (buttonValue === '='&& display.value!== "") { //display.value!== "" >> evitar el "Undefined" en la pantalla por un cálculo vacio
           display.value = eval (display.value); //W3S: "The eval() function evaluates or executes an argument."
           if (display.value == Infinity){
-            display.value = "WTF u doin'"
+            display.value = ":')"
           }
      }
      else if (buttonValue === "C"){ //Para borrar
